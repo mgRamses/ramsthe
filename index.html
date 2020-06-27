@@ -19,12 +19,12 @@
                 <div class="profile">
                     <div class="image">
                         <a href="#">
-                            <img src="https://ryancv.bslthemes.com/v3/wp-content/uploads/2018/11/profile-140x140.png" alt="">
+                            <img src="img/profile.jpg" alt="">
                         </a>
                     </div>
                     <div class="title">Ramsés Mendoza</div>
-
-                    <div class="typed-cursor">|</div>
+                    <div class="subtitle subtitle-typed2">Desarrollador Web</div>
+                    
                 </div>
                 <div class="top-menu top-menu-onepage">
                     <div class="menu-main-menu-container">
@@ -143,7 +143,7 @@
                                         <span class="ion ion-code"></span>
                                     </div>
                                     <div class="name">Desarrollo Web</div>
-                                    <p>Sitios web modernos y móviles que te ayudarán a alcanzar tus metas de marketing</p>
+                                    <p>Implementación de las últimas tecnologías para poder crear aplicaciones increíbles que solucionen problemas.</p>
                                 </div>
                             </div>
                             <div class="col col-d-6 border-line-h">
@@ -152,7 +152,7 @@
                                         <span class="ion-paintbucket"></span>
                                     </div>
                                     <div class="name">Diseño UX/UI</div>
-                                    <p>Sitios web modernos y móviles que te ayudarán a alcanzar tus metas de marketing</p>
+                                    <p>Aplicaciones web con diseños que además de funcionales, lucen maravillosos. El diseño como solucionador de problemas.</p>
                                 </div>
                             </div>
 
@@ -185,7 +185,7 @@
                                     <div class="icon">
                                         <span class="ion ion-disc"></span>
                                     </div>
-                                    <div class="name">80 discos escuchados</div>
+                                    <div class="name">En proceso...</div>
                                 </div>
                             </div>
                             <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
@@ -193,7 +193,7 @@
                                     <div class="icon">
                                         <span class="ion ion-disc"></span>
                                     </div>
-                                    <div class="name">80 discos escuchados</div>
+                                    <div class="name">En proceso...</div>
                                 </div>
                             </div>
                             <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
@@ -201,7 +201,7 @@
                                     <div class="icon">
                                         <span class="ion ion-disc"></span>
                                     </div>
-                                    <div class="name">80 discos escuchados</div>
+                                    <div class="name">En proceso...</div>
                                 </div>
                             </div>
                             <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
@@ -209,7 +209,7 @@
                                     <div class="icon">
                                         <span class="ion ion-disc"></span>
                                     </div>
-                                    <div class="name">80 discos escuchados</div>
+                                    <div class="name">En proceso...</div>
                                 </div>
                             </div>
                         </div>
@@ -582,7 +582,17 @@
             showCursor: false
         };
 
-        var typed = new Typed('.subtitle-typed', options);
+        var typed2 = new Typed('.subtitle-typed', options);
+
+        var options2 = {
+            strings: ['', 'Desarrollador Web', 'Diseñador', 'Freelancer', 'Blogger'],
+            backDelay: 3500,
+            typeSpeed: 40,
+            loop: true,
+            showCursor: false
+        };
+
+        var typed = new Typed('.subtitle-typed2', options2);
     </script>
 </body>
 </html>
