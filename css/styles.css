@@ -101,8 +101,8 @@ body{
     list-style: none;
 }
 
-.header .top-menu ul li.current-menu-item a{
-    ccolor: #78cc6d;
+.header .top-menu ul li.current-menu-item a, header .top-menu ul li.current-menu-item a .icon{
+    color: #78cc6d;
 }
 .header .top-menu ul li a::before{
     content: '';
@@ -152,6 +152,9 @@ a{
 
 .ion-ios-person::before{
     content:"\f47e";
+}
+#card-home{
+    display:block;
 }
 .card-started{
     position: relative;
@@ -253,6 +256,9 @@ a{
     background-color: #fff;
     transform-origin: center;
     border-radius: 0 4px 4px 0;
+    display: none;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 
 .card-started .profile .image{
@@ -356,6 +362,16 @@ a{
     border: none;
 }
 
+.lnk:hover{
+    color: #78cc6d;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+.header .top-menu ul li a:hover, .header .top-menu ul li a:hover  > .icon{
+    color: #78cc6d;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
 .lnk:before{
     content: '';
     position: absolute;
@@ -621,7 +637,29 @@ a{
     height: auto;
 }
 
+
+/*** CARD RESUME ***/
+#card-resume{
+    display: none;
+}
+
+/*** END CARD RESUME ***/
+
+
+/*** CARD RESUME ***/
+#card-blog{
+    display:none;
+}
+/*** END CARD RESUME ***/
+
+#card-blog-single{
+    display: none;
+}
+
 /**** CONTACTO ***/
+#card-contact{
+    display:none;
+}
 .wpcf7-form-control-wrap{
     position: relative;
 }
@@ -631,6 +669,28 @@ a{
 .card-wrap .contact.contacts .row .row .col{
     padding-bottom: 30px;
 }
+.contact-copy{
+    padding-top: 28px;
+}
+
+.button{
+    background: none;
+    border: solid 1px grey;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:rgb(88, 88, 88);
+}
+.button:hover{
+    background: #78cc6d;
+    color: white;
+    border: solid 1px #47863f;
+}
+
+
 @media(min-width: 1024px){
     .row .col.col-d-6{
         width: 49.8%;
@@ -838,5 +898,207 @@ textarea{
 
 }
 
+@-webkit-keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-70%, 0, 0);
+      transform: translate3d(-70%, 0, 0)
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0)
+    }
+  }
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-70%, 0, 0);
+      transform: translate3d(-70%, 0, 0)
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0)
+    }
+  }
+
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft
+  }
 
 
+  @-webkit-keyframes fadeOutLeft {
+    from {
+      opacity: 1
+    }
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(-70%, 0, 0);
+      transform: translate3d(-70%, 0, 0)
+    }
+  }
+  
+  @keyframes fadeOutLeft {
+    from {
+      opacity: 1
+    }
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(-70%, 0, 0);
+      transform: translate3d(-70%, 0, 0)
+    }
+  }
+  
+  .fadeOutLeft {
+    -webkit-animation-name: fadeOutLeft;
+    animation-name: fadeOutLeft
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    background-color: transparent
+  }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-border-radius: 6px;
+    border-radius: 6px
+  }
+
+
+  /*** ANIMACIÓN DE BURBUJAS ***/
+  .bg-bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bg-bubbles li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, .1);
+    bottom: -320px;
+    -webkit-animation: square 50s infinite;
+    animation: square 50s infinite;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+  }
+  
+  .bg-bubbles li:nth-child(1) {
+    left: 10%
+  }
+  
+  .bg-bubbles li:nth-child(2) {
+    left: 20%;
+    width: 160px;
+    height: 160px;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 34s;
+    animation-duration: 34s
+  }
+  
+  .bg-bubbles li:nth-child(3) {
+    left: 25%;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s
+  }
+  
+  .bg-bubbles li:nth-child(4) {
+    left: 40%;
+    width: 120px;
+    height: 120px;
+    -webkit-animation-duration: 44s;
+    animation-duration: 44s
+  }
+  
+  .bg-bubbles li:nth-child(5) {
+    left: 70%
+  }
+  
+  .bg-bubbles li:nth-child(6) {
+    left: 80%;
+    width: 240px;
+    height: 240px;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s
+  }
+  
+  .bg-bubbles li:nth-child(7) {
+    left: 32%;
+    width: 320px;
+    height: 320px;
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s
+  }
+  
+  .bg-bubbles li:nth-child(8) {
+    left: 55%;
+    width: 40px;
+    height: 40px;
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+    -webkit-animation-duration: 80s;
+    animation-duration: 80s
+  }
+  
+  .bg-bubbles li:nth-child(9) {
+    left: 25%;
+    width: 20px;
+    height: 20px;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 80s;
+    animation-duration: 80s
+  }
+  
+  .bg-bubbles li:nth-child(10) {
+    left: 90%;
+    width: 320px;
+    height: 320px;
+    -webkit-animation-delay: 22s;
+    animation-delay: 22s
+  }
+
+  @-webkit-keyframes square {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+    }
+    100% {
+      -webkit-transform: translateY(-1500px) rotate(600deg);
+      transform: translateY(-1500px) rotate(600deg)
+    }
+  }
+  
+  @keyframes square {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+    }
+    100% {
+      -webkit-transform: translateY(-1500px) rotate(600deg);
+      transform: translateY(-1500px) rotate(600deg)
+    }
+  }
+/*** /ANIMACIN DE BURBUJAS ***/
+
+.box-item{
+    text-align: center;
+}

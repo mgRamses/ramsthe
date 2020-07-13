@@ -12,7 +12,21 @@
 </head>
 <body class="home">
     <div class="page page_wrap theme-style-classic">
-        <div class="background gradient"></div>
+        <div class="background gradient">
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
         <div class="container opened">
             <!-- HEADER -->
             <header class="header">
@@ -27,36 +41,31 @@
                     
                 </div>
                 <div class="top-menu top-menu-onepage">
-                    <div class="menu-main-menu-container">
+                    <div class="menu-main-menu-container">        
                         <ul class="menu">
-                            <li class="current-menu-item menu-item">
-                                <a class="one-page-menu-item" href="">
-                                    <span class="icon ion-ios-person"></span>
-                                    Acerca
+                            <li id="item-1" class="menu-item current-menu-item">
+                                <a class="one-page-menu-item" href="#">
+                                    <span class="icon ion-ios-person"></span>Acerca
                                 </a>
                             </li> <!-- Probando -->
-                            <li class="current-menu-item menu-item">
-                                <a class="one-page-menu-item" href="">
-                                    <span class="icon ion-android-list"></span>
-                                    CV
+                            <li id="item-2" class="menu-item">
+                                <a class="one-page-menu-item" href="#resume">
+                                    <span class="icon ion-android-list"></span>CV
                                 </a>
                             </li>
-                            <li class="current-menu-item menu-item">
-                                <a class="one-page-menu-item" href="">
-                                    <span class="icon ion-paintbrush"></span>
-                                    Trabajo
+                            <li id="item-3" class="menu-item">
+                                <a class="one-page-menu-item" href="#works">
+                                    <span class="icon ion-paintbrush"></span>Trabajo
                                 </a>
                             </li>
-                            <li class="current-menu-item menu-item">
-                                <a class="one-page-menu-item" href="">
-                                    <span class="icon ion-chatbox-working"></span>
-                                    Blog
+                            <li id="item-4" class="menu-item">
+                                <a class="one-page-menu-item" href="#blog">
+                                    <span class="icon ion-chatbox-working"></span>Blog
                                 </a>
                             </li>
-                            <li class="current-menu-item menu-item">
-                                <a class="one-page-menu-item" href="">
-                                    <span class="icon ion-at"></span>
-                                    CONTÁC
+                            <li id="item-5" class="menu-item">
+                                <a class="one-page-menu-item" href="#contact">
+                                    <span class="icon ion-at"></span>CONTÁC
                                 </a>
                             </li>
                         </ul>
@@ -65,7 +74,7 @@
             </header>
             <!-- / HEADER -->
 
-            <!-- HOME CARD -->
+            <!-- HOME CARD IMAGEN  Y REDES-->
             <div id="home-card" class="card-started">
                 <div class="profile">
                     <div class="profile-content">
@@ -110,11 +119,11 @@
                     </div>
                 </div>
             </div>
-            <!-- / HOME CARD -->
+            <!-- / HOME CARD IMAGEN Y REDES-->
             
             <!-- CARD HOME -->
             <div class="content-sidebar"></div>
-            <div id="card-home" class="card-inner animated active">
+            <div class="card-inner animated active" id="card-1">
                 <div class="card-wrap">
                     <div class="content about">
                         <div class="title">
@@ -221,9 +230,8 @@
             </div> 
             <!-- /CARD HOME -->
             
-
-            <!-- CARD RESUME --> <!--
-            <div class="card-inner" id="card-resume">
+            <!-- CARD RESUME --> 
+            <div class="card-inner" id="card-2">
                 <div class="card-wrap">
                     <div class="content resume">
                         <div class="title">
@@ -346,12 +354,67 @@
                     </div>
                     <div class="content testimonials"></div>
                 </div>
-            </div> -->
+            </div> 
             <!-- /CARD RESUME -->
 
-            
-            <!-- BLOG -->  <!--
-            <div class="card-inner" id="card-blog">
+            <div class="card-inner" id="card-3">
+                <div class="card-wrap">
+                    <div class="content works">
+                        <div class="title">
+                            <span class="firs-word">Últimos</span> trabajos
+                        </div>
+                        <div class="row grid-items border-line-v">
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <img src="https://ryancv.bslthemes.com/v3/wp-content/uploads/2018/11/work2-600x400.jpg" alt="" width="280" height="200">
+                                    </div>
+                                    <div class="desc">
+                                        <a href="#">Sitio Web</a>
+                                        <div class="category">Web</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <img src="https://ryancv.bslthemes.com/v3/wp-content/uploads/2018/11/work2-600x400.jpg" alt="" width="280" height="200">
+                                    </div>
+                                    <div class="desc">
+                                        <a href="#">Sitio Web</a>
+                                        <div class="category">Web</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <img src="https://ryancv.bslthemes.com/v3/wp-content/uploads/2018/11/work2-600x400.jpg" alt="" width="280" height="200">
+                                    </div>
+                                    <div class="desc">
+                                        <a href="#">Sitio Web</a>
+                                        <div class="category">Web</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <img src="https://ryancv.bslthemes.com/v3/wp-content/uploads/2018/11/work2-600x400.jpg" alt="" width="280" height="200">
+                                    </div>
+                                    <div class="desc">
+                                        <a href="#">Sitio Web</a>
+                                        <div class="category">Web</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOG --> 
+            <div class="card-inner" id="card-4">
                 <div class="card-wrap">
                     <div class="content blog">
                         <div class="title">
@@ -363,16 +426,76 @@
                                     <div id="post-115" class="post type-post">
                                         <div class="image">
                                             <a href="#" class="post-thumbnail">
-                                                <img src="https://ryancv.bslthemes.com/v3/wp-content/uploads/2018/11/blog1-590x330.jpg" alt="">
+                                                <img src="./img/post4.jpeg" alt="">
                                             </a>
                                         </div>
                                         <div class="desc">
                                             <a href="#">
-                                                <span class="date">Noviembre 8, 2019</span>
+                                                <span class="date">Diciembre 14, 2019</span>
                                             </a>
-                                            <a href="#" class="name">Creativity Is More Than</a>
+                                            <a href="#" class="name">Programación para no programadores (parte 1: motivación)</a>
                                             <div class="text">
-                                                <p>Ex audire suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique ut. Te cule tation munere noluisse. Enim torquatos…</p>
+                                                <p>Estos artículos están inspirados por Daniela Ameyalli, una alumna de la Licenciatura en Química Clínica...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-d-6 col-t-6 col-m-12">
+                                <div class="box-item">
+                                    <div id="post-115" class="post type-post">
+                                        <div class="image">
+                                            <a href="#" class="post-thumbnail">
+                                                <img src="./img/post2.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <a href="#">
+                                                <span class="date">Noviembre 19, 2019</span>
+                                            </a>
+                                            <a href="#" class="name">Yo y la programación… (Parte 2)</a>
+                                            <div class="text">
+                                                <p>Esta historia será rápida, no te quitaré mucho tiempo. La primera vez que usé una computadora...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-d-6 col-t-6 col-m-12">
+                                <div class="box-item">
+                                    <div id="post-115" class="post type-post">
+                                        <div class="image">
+                                            <a href="#" class="post-thumbnail">
+                                                <img src="./img/post1.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <a href="#">
+                                                <span class="date">Septiembre 18, 2019</span>
+                                            </a>
+                                            <a href="#" class="name">Yo y la programación… (Parte 1)</a>
+                                            <div class="text">
+                                                <p>Esta historia será rápida, no te quitaré mucho tiempo. La primera vez que usé una computadora...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-d-6 col-t-6 col-m-12">
+                                <div class="box-item">
+                                    <div id="post-115" class="post type-post">
+                                        <div class="image">
+                                            <a href="#" class="post-thumbnail">
+                                                <img src="./img/post3.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="desc">
+                                            <a href="#">
+                                                <span class="date">Diciembre 21, 2017</span>
+                                            </a>
+                                            <a href="#" class="name">¿Cuál es el error de programación más difícil que has tenido que resolver?</a>
+                                            <div class="text">
+                                                <p>Hace unos días en Quora me encontré con una pregunta interesante, y al entrar a leer las respuestas...</p>
                                             </div>
                                         </div>
                                     </div>
@@ -382,17 +505,21 @@
                         <div class="pager"></div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- /BLOG -->
 
-            <!-- CONTÁCTO --> <!--
-            <div class="card-inner" id="card-contacts">
+            <!-- CONTÁCTO --> 
+            <div class="card-inner" id="card-5">
                 <div class="card-wrap">
                     <div class="content contacts">
                         <div class="title">
                             <div class="first-word">Contáctame</div>
                         </div>
-                        <div class="row"></div>
+                        <div class="contact-copy">
+                            <p>No busques más. Empezemos a trabajar. Pongo a tu servicio mis habilidades con la finalidad de que tu proyecto sea concluido en tiempo y cumpliedo la calidad requerida.</p>
+                            <p>Te dejo mi correo electrónico o bien puedes escribir directamente en el formulario de abajo. Como gustes.</p>
+                            <p> <i class="ion-ios-email-outline" style="font-size: 28px;"></i> <b>mg.ramses@gmail.com</b></p>
+                        </div>
                     </div>
                     <div class="content contacts">
                         <div class="title">
@@ -414,19 +541,24 @@
                                                 <div class="col col-d-6 col-t-6 col-m-12">
                                                     <div class="group-val">
                                                         <span class="wpcf7-form-control-wrap your-name">
-                                                            <input type="text" class="wpcf7-form-control wpcf7-text" placeholder="Nombre completo">
+                                                            <input type="text" class="wpcf7-form-control wpcf7-text" placeholder="Tu correo electrónico">
                                                         </span>
                                                     </div>
                                                 </div>
                                                 <div class="col col-d-12 col-t-12 col-m-12">
                                                     <div class="group-val">
                                                         <span class="wpcf7-form-control-wrap your-name">
-                                                            <textarea type="text" class="wpcf7-form-control wpcf7-text" placeholder="Nombre completo"></textarea>
+                                                            <textarea type="text" class="wpcf7-form-control wpcf7-text" placeholder="Escribe tu mensaje"></textarea>
                                                         </span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="align-left"></div>
+                                            <div class="align-left">
+                                                <button type="submit" class="button">
+                                                    <span class="text">Enviar mensaje</span>
+                                                    <span class="arrow"></span>
+                                                </button>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -434,10 +566,10 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- /CONTÁCTO-->
 
-            <!-- BLOG --> <!--
+            <!-- ARTÍCULO DE BLOG -->
                 <div class="card-inner blog blog-post" id="card-blog-single">
                     <div class="card-wrap">
                         <div class="content blog-single">
@@ -562,11 +694,53 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
-            <!-- /BLOG -->
+                </div>
+            <!-- /ARTÍCULO DE BLOG -->
 
         </div>
     </div>
+    
+    <script>
+        window.onload = function(){
+            var containers = document.querySelectorAll(".menu-main-menu-container");
+
+            for(var j=0; j<containers.length; j++){
+
+                // Display and hide elements
+                var nav = containers[j].querySelector('ul');
+                //nav.style.display = 'block';
+
+                // Set current tab
+                var navitem = containers[j].querySelector('ul li');
+                var ident = navitem.id.split('-')[1];
+
+                navitem.parentNode.setAttribute('menu-current', ident);
+                //navitem.setAttribute('style','background-color: #f00');
+
+                var pages = containers[j].querySelectorAll('.card-inner');
+                for(var i=1; i<pages.length; i++){
+                    pages[i].style.display='block';
+                }
+
+                var tabs = containers[j].querySelectorAll('ul li');
+                for(var i=0; i<tabs.length; i++){
+                    tabs[i].onclick=displayPage;
+                }
+            }
+        }
+
+        // Click on TAB
+        function displayPage(){
+            var current = this.parentNode.getAttribute('menu-current');
+            document.getElementById('item-' + current).classList.remove('current-menu-item');
+            document.getElementById('card-' + current).style.display='none';
+
+            var ident = this.id.split('-')[1];
+            this.classList.add('current-menu-item');
+            document.getElementById('card-' + ident).style.display='block';
+            this.parentNode.setAttribute('menu-current', ident);
+        }
+    </script>
     
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css?ver=5.3.2">
