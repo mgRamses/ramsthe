@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramsés Mendoza | Desarrollador Web</title>
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
             </ul>
         </div>
 
-        <div class="container opened">
+        <div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
             <!-- HEADER -->
             <header class="header">
                 <div class="profile">
@@ -43,28 +44,28 @@
                 <div class="top-menu top-menu-onepage">
                     <div class="menu-main-menu-container">        
                         <ul class="menu">
-                            <li id="item-1" class="menu-item current-menu-item">
-                                <a class="one-page-menu-item" href="#">
+                            <li class="active">
+                                <a class href="#about-card">
                                     <span class="icon ion-ios-person"></span>Acerca
                                 </a>
                             </li> <!-- Probando -->
-                            <li id="item-2" class="menu-item">
-                                <a class="one-page-menu-item" href="#resume">
+                            <li class>
+                                <a class href="#resume-card">
                                     <span class="icon ion-android-list"></span>CV
                                 </a>
                             </li>
-                            <li id="item-3" class="menu-item">
-                                <a class="one-page-menu-item" href="#works">
+                            <li class>
+                                <a class href="#works-card">
                                     <span class="icon ion-paintbrush"></span>Trabajo
                                 </a>
                             </li>
-                            <li id="item-4" class="menu-item">
-                                <a class="one-page-menu-item" href="#blog">
+                            <li class>
+                                <a class href="#blog-card">
                                     <span class="icon ion-chatbox-working"></span>Blog
                                 </a>
                             </li>
-                            <li id="item-5" class="menu-item">
-                                <a class="one-page-menu-item" href="#contact">
+                            <li class>
+                                <a class href="#contacts-card">
                                     <span class="icon ion-at"></span>CONTÁC
                                 </a>
                             </li>
@@ -123,7 +124,7 @@
             
             <!-- CARD HOME -->
             <div class="content-sidebar"></div>
-            <div class="card-inner animated active" id="card-1">
+            <div class="card-inner animated active" id="about-card">
                 <div class="card-wrap">
                     <div class="content about">
                         <div class="title">
@@ -135,7 +136,7 @@
                                     <p>
                                         <strong>¡Hola! Soy Ramsés Mendoza</strong>
                                         <br>
-                                        Diseñador y desarrollador Web desde el exquisito estado de Oaxaca, México. Desde niño he tenido una pasión peculiar por el desarrollo de software. Ahora, me apasiona poner en práctica mi experiencia para la solución a los problemas de tu empresa.
+                                        Diseñador y desarrollador Web desde el estado de Oaxaca, México. Desde niño he tenido una gran pasión por el desarrollo de software. Ahora, me apasiona poner en práctica mi experiencia para la solución a los problemas de tu empresa.
                                     </p>
                                 </div>
                             </div>
@@ -231,7 +232,7 @@
             <!-- /CARD HOME -->
             
             <!-- CARD RESUME --> 
-            <div class="card-inner" id="card-2">
+            <div class="card-inner" id="resume-card">
                 <div class="card-wrap">
                     <div class="content resume">
                         <div class="title">
@@ -243,31 +244,47 @@
                                     <div class="icon">
                                         <i class="ion ion-briefcase"></i>
                                     </div>
-                                    <div class="name">Experience</div>
+                                    <div class="name">Experiencia</div>
                                 </div>
                                 <div class="resume-items">
                                     <div class="resume-item border-line-h active">
-                                        <div class="date">2013 - Presente</div>
-                                        <div class="name">Director de Arte</div>
-                                        <div class="company">Facebook Inc.</div>
+                                        <div class="date">2019 - 2020</div>
+                                        <div class="name">Desarrollador Front End</div>
+                                        <div class="company">ITSWA</div>
                                         <div class="single-post-text">
-                                            Collaborate with creative and development teams on the execution of ideas.
+                                            Desarrollo de aplicaciones web con React. Desarrollo de aplicaciones móviles con Ionic. Amplio conocimiento de CSS y JavaScript para la implementación de efectos visuales.
                                         </div>
                                     </div>
                                     <div class="resume-item border-line-h">
-                                        <div class="date">2013 - Presente</div>
-                                        <div class="name">Director de Arte</div>
-                                        <div class="company">Facebook Inc.</div>
+                                        <div class="date">2019 - 2020</div>
+                                        <div class="name">Desarrollador Front End y Back End</div>
+                                        <div class="company">Universidad de la Cañada</div>
                                         <div class="single-post-text">
-                                            Collaborate with creative and development teams on the execution of ideas.
+                                            Desarrollo de un sistema para el control de prácticas profesionales. Instalación de un servidor Git en CentOS. UX/UI, HTML, CSS, JavaScript, MySQL y creación de una API con Laravel. 
                                         </div>
                                     </div>
                                     <div class="resume-item border-line-h">
-                                        <div class="date">2013 - Presente</div>
-                                        <div class="name">Director de Arte</div>
-                                        <div class="company">Facebook Inc.</div>
+                                        <div class="date">2019 - 2019</div>
+                                        <div class="name">Programador Machine Learning</div>
+                                        <div class="company">CargoSprint (Intern)</div>
                                         <div class="single-post-text">
-                                            Collaborate with creative and development teams on the execution of ideas.
+                                            Depuración de datos. Entrenamiento de un modelo para la ayuda en la predicción de fraudes financieros. Herramientas: AutoML de Google Cloud AI.
+                                        </div>
+                                    </div>
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">2018 - 2019</div>
+                                        <div class="name">Desarrollador Back End</div>
+                                        <div class="company">MAXTEL</div>
+                                        <div class="single-post-text">
+                                            Desarrollo de una aplicación web para al administración de una red WISP usando un router Mikrotik. HTML, CSS, Bootstrap, JS, PHP, RouterOS.
+                                        </div>
+                                    </div>
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">2018 - 2018</div>
+                                        <div class="name">Desarrollador Front End</div>
+                                        <div class="company">Ignis Altus</div>
+                                        <div class="single-post-text">
+                                            Desarrollo de un sitio de administración interna para la aplicación Vigilantus. Obtener y visualizar datos desde una API. HTML, CSS, jQuery, Google Charts.
                                         </div>
                                     </div>
                                 </div>
@@ -275,31 +292,15 @@
                             <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
                                 <div class="resume-title border-line-h">
                                     <div class="icon"></div>
-                                    <div class="name">Experience</div>
+                                    <div class="name">Educación</div>
                                 </div>
                                 <div class="resume-items">
                                     <div class="resume-item borner-line-h active">
-                                        <div class="date">2013 - Presente</div>
-                                        <div class="name">Director de Arte</div>
-                                        <div class="company">Facebook Inc.</div>
+                                        <div class="date">2015 - 2020</div>
+                                        <div class="name">Universidad de la Cañada</div>
+                                        <div class="company">Teotitlán de Flores Magón, Oaxaca</div>
                                         <div class="single-post-text">
-                                            Collaborate with creative and development teams on the execution of ideas.
-                                        </div>
-                                    </div>
-                                    <div class="resume-item border-line-h">
-                                        <div class="date">2013 - Presente</div>
-                                        <div class="name">Director de Arte</div>
-                                        <div class="company">Facebook Inc.</div>
-                                        <div class="single-post-text">
-                                            Collaborate with creative and development teams on the execution of ideas.
-                                        </div>
-                                    </div>
-                                    <div class="resume-item border-line-h">
-                                        <div class="date">2013 - Presente</div>
-                                        <div class="name">Director de Arte</div>
-                                        <div class="company">Facebook Inc.</div>
-                                        <div class="single-post-text">
-                                            Collaborate with creative and development teams on the execution of ideas.
+                                            Licenciatura en Informática por la Universidad de la Cañada (UNCA - SUNEO) en Teotitlán de Flores Magón, Oaxaca, México.
                                         </div>
                                     </div>
                                 </div>
@@ -318,11 +319,11 @@
                                         <div class="icon">
                                             <i class="ion ion-easel"></i>
                                         </div>
-                                        <div class="name">Diseño</div>
+                                        <div class="name">Programación</div>
                                     </div>
                                     <ul>
                                         <li class="border-lihne-h">
-                                            <div class="name">Angular</div>
+                                            <div class="name">React</div>
                                             <div class="progress">
                                                 <div class="percentage" style="width:96%"></div>
                                             </div>
@@ -357,7 +358,7 @@
             </div> 
             <!-- /CARD RESUME -->
 
-            <div class="card-inner" id="card-3">
+            <div class="card-inner" id="works-card">
                 <div class="card-wrap">
                     <div class="content works">
                         <div class="title">
@@ -414,7 +415,7 @@
             </div>
 
             <!-- BLOG --> 
-            <div class="card-inner" id="card-4">
+            <div class="card-inner" id="blog-card">
                 <div class="card-wrap">
                     <div class="content blog">
                         <div class="title">
@@ -509,7 +510,7 @@
             <!-- /BLOG -->
 
             <!-- CONTÁCTO --> 
-            <div class="card-inner" id="card-5">
+            <div class="card-inner" id="contacts-card">
                 <div class="card-wrap">
                     <div class="content contacts">
                         <div class="title">
@@ -700,7 +701,7 @@
         </div>
     </div>
     
-    <script>
+    <script>/*
         window.onload = function(){
             var containers = document.querySelectorAll(".menu-main-menu-container");
 
@@ -739,8 +740,11 @@
             this.classList.add('current-menu-item');
             document.getElementById('card-' + ident).style.display='block';
             this.parentNode.setAttribute('menu-current', ident);
-        }
+        }*/
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
     
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css?ver=5.3.2">
@@ -758,5 +762,8 @@
 
         var typed = new Typed('.subtitle-typed', options);
     </script>
+
+    <script src="js/scripts.js"></script>
+    
 </body>
 </html>
